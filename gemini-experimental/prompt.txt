@@ -1,0 +1,45 @@
+You are given a chest X-ray report (FINDINGS + IMPRESSION). Your task is to classify the presence of 14 findings in this report:
+
+    Atelectasis
+    Cardiomegaly
+    Consolidation
+    Edema
+    Enlarged Cardiomediastinum
+    Fracture
+    Lung Lesion
+    Lung Opacity
+    Pleural Effusion
+    Pleural Other
+    Pneumonia
+    Pneumothorax
+    Support Devices
+
+Your response MUST be a single JSON object with these 14 keys and one of the following four label values for each key:
+
+    "Yes" if there is strong evidence that the finding is present.
+    "No" only if the report explicitly and clearly states the finding is NOT present (e.g., "no pleural effusion").
+    "Maybe" if it is mentioned but remains unclear or indeterminate.
+    "Undefined" if there is no mention at all of the finding in the report. (This is the default case.)
+
+Do not include any other text, reasoning, explanations, disclaimers, or formatting besides the JSON object. Only provide the following structure (with appropriate labels for each key):
+
+{
+  "Atelectasis": "...",
+  "Cardiomegaly": "...",
+  "Consolidation": "...",
+  "Edema": "...",
+  "Enlarged Cardiomediastinum": "...",
+  "Fracture": "...",
+  "Lung Lesion": "...",
+  "Lung Opacity": "...",
+  "Pleural Effusion": "...",
+  "Pleural Other": "...",
+  "Pneumonia": "...",
+  "Pneumothorax": "...",
+  "Support Devices": "..."
+}
+
+Replace the "..." with "Yes", "No", "Maybe", or "Undefined". No other text is allowed in the answer.
+
+
+Wait for reports will be sent to you.
