@@ -8,3 +8,7 @@ Usage of Gemini Labeler:
 
 python3 gemini_labeler.py --input_path <> --output_path <> --prompt_path <>
 
+Usage of Pipelined Gemini Labeler:
+
+python3 gemini_labeler_pipelined.py --input_path <> --output_path <>
+
