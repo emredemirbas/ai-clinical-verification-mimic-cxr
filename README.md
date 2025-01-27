@@ -16,5 +16,7 @@ Usage of extract_reports_by_study_id:
 python extract_relevant_reports.py --csv_file <> --input_folder <> --output_file <>
 
 • csv_file: mimic-cxr-2.1.0-test-set-labeled.csv
+
 • input_folder: folder that contains all the reports, named "files"
+
 • output_file: relevant_reports.json
