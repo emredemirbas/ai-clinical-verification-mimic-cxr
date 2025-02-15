@@ -20,3 +20,14 @@ python extract_relevant_reports.py --csv_file <> --input_folder <> --output_file
   • input_folder: folder that contains all the reports, named "files"
   
   • output_file: relevant_reports.json
+
+---
+data
+
+• relevant_reports.json: Contains raw data for 685 relevant reports, identified using patient_id and study_id from the mimic-cxr-2.1.0-test-set-labeled.csv file.
+
+• mimic-cxr-2.1.0-test-set-labeled.csv: Ground truth dataset with labels for 687 reports.
+
+• deepseek_r1_distill_local_output.json: Contains labeled outputs from the DeepSeek R1 Distill Local model.
+
+• phi4_output.json: Contains labeled outputs from the Phi4 Local model.
