@@ -10,27 +10,44 @@ This repository accompanies the research paper:
 
 ## Overview
 
-This project investigates the **clinical reliability of AI models** in **radiology report annotation**,  
-benchmarking several **Large Language Models (LLMs)** — including GPT-4, Gemini, Phi-4, and DeepSeek-R1 —  
-against **physician-labeled MIMIC-CXR** datasets.
+This project provides the **evaluation results and analysis scripts** used to benchmark  
+multiple AI labelers—including **Google Gemini**, **OpenAI GPT-4o**, **CheXpert**,  
+and lightweight local models (**DeepSeek-R1**, **Phi-4**)—on radiology report annotation tasks.  
 
-The repository contains:
-- Model output files (annotations produced by GPT-4o, Gemini 1.5 Pro, Microsoft Phi4, and Deepseek-R1-Distill-
-Llama-8B)  
-- Evaluation scripts and Jupyter notebooks for metric computation and cross-model comparison  
-- Processed subsets of the MIMIC-CXR dataset (no raw or ground-truth data included)
-
----
-
-##  Models Evaluated
-
-| Model | Provider | Mode |
-|:------|:----------|:-----|
-| GPT-4 | OpenAI | API |
-| Gemini 1.5 Pro | Google | API |
-| DeepSeek-R1 Distill | Local (HuggingFace) | Offline |
-| Phi-4 | Local (HuggingFace) | Offline |
+All evaluations were performed against a **physician-validated subset** of the **MIMIC-CXR** dataset,  
+focusing on **13 common thoracic findings**.  
+The repository includes model outputs (JSON) and metric computation notebooks  
+for comparing labeling accuracy, precision, recall, and F1-scores across models.  
 
 ---
 
-> *For academic use only. Dataset usage complies with the PhysioNet MIMIC-CXR license.*
+## Key Findings
+
+- **Gemini** achieved the best overall balance between precision and recall.  
+- **CheXpert** performed strongly in well-defined categories (e.g., Lung Opacity) but lacked adaptability.  
+- **GPT-4o** showed high precision in some critical findings (e.g., Pneumothorax).  
+- **Lightweight local LLMs** (DeepSeek, Phi-4) underperformed due to hardware and domain-training limits.  
+- **Rare findings** (e.g., Pleural Other) remained difficult to detect,  
+  highlighting the effects of dataset imbalance on model sensitivity.
+
+---
+
+## Repository Contents
+
+- `data/` – Contains model outputs and processed evaluation subsets (no raw MIMIC data).  
+- `evaluation-metrics/` – Jupyter notebooks for calculating and visualizing metrics.  
+- `gpt_labeler.py`, `gemini_labeler.py` – Scripts used during labeling phase (for reproducibility).  
+
+---
+
+## Authors
+
+**Emre Demirbaş**, **Ömer Faruk Özüyagli**, **Buse Nur İleri**, **Ebubekir Alatepe**,  
+**Yasin Durusoy**, **M. Fatih Demirci**  
+Department of Computer Engineering, Ankara Yıldırım Beyazıt University  
+and Oteo Health Technologies
+
+---
+
+> *This repository contains evaluation artifacts only.  
+> All experiments were conducted using the physician-labeled MIMIC-CXR dataset under PhysioNet license.*
