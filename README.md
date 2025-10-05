@@ -1,33 +1,35 @@
-# ai-clinical-verification-mimic-cxr
+# Clinical Verification of AI Models for Radiology Report Annotation
 
-Usage of GPT Labeler:
+This repository accompanies the research paper:
 
-python3 gpt_labeler.py --input_path <> --output_path <> --prompt_path <> --model <> (default gpt-4, if you not want to specify model, do not pass that parameter.)
-
-Usage of Gemini Labeler:
-
-python3 gemini_labeler.py --input_path <> --output_path <> --prompt_path <>
-
-Usage of Pipelined Gemini Labeler:
-
-python3 gemini_labeler_pipelined.py --input_path <> --output_path <>
-
-Usage of extract_reports_by_study_id: 
-python extract_relevant_reports.py --csv_file <> --input_folder <> --output_file <>
-
-  • csv_file: mimic-cxr-2.1.0-test-set-labeled.csv
-  
-  • input_folder: folder that contains all the reports, named "files"
-  
-  • output_file: relevant_reports.json
+> **Clinical Verification of AI Models for Radiology Report Annotation Using a Physician-Annotated MIMIC-CXR**  
+> *Presented at the 9th IEEE International Symposium on Innovative Approaches in Smart Technologies (ISAS 2025)*  
+> [View Paper on IEEE Xplore]([https://ieeexplore.ieee.org/](https://ieeexplore.ieee.org/document/11101953))
 
 ---
-data
 
-• relevant_reports.json: Contains raw data for 685 relevant reports, identified using patient_id and study_id from the mimic-cxr-2.1.0-test-set-labeled.csv file.
+## Overview
 
-• mimic-cxr-2.1.0-test-set-labeled.csv: Ground truth dataset with labels for 687 reports.
+This project investigates the **clinical reliability of AI models** in **radiology report annotation**,  
+benchmarking several **Large Language Models (LLMs)** — including GPT-4, Gemini, Phi-4, and DeepSeek-R1 —  
+against **physician-labeled MIMIC-CXR** datasets.
 
-• deepseek_r1_distill_local_output.json: Contains labeled outputs from the DeepSeek R1 Distill Local model.
+The repository contains:
+- AI-generated and ground-truth labeled reports  
+- Evaluation notebooks for accuracy, precision, recall, and F1 metrics  
+- Labeling pipelines for GPT-based and Gemini-based experiments
 
-• phi4_output.json: Contains labeled outputs from the Phi4 Local model.
+---
+
+## 🧠 Models Evaluated
+
+| Model | Provider | Mode |
+|:------|:----------|:-----|
+| GPT-4 | OpenAI | API |
+| Gemini 1.5 Pro | Google | API |
+| DeepSeek-R1 Distill | Local (HuggingFace) | Offline |
+| Phi-4 | Local (HuggingFace) | Offline |
+
+---
+
+> 🧾 *For academic use only. Dataset usage complies with the PhysioNet MIMIC-CXR license.*
