@@ -1,4 +1,5 @@
 # Clinical Verification of AI Models for Radiology Report Annotation
+*Benchmarking Gemini, GPT-4o, CheXpert, DeepSeek-R1, and Phi-4 on physician-validated MIMIC-CXR reports.*
 
 This repository accompanies the research paper:
 
