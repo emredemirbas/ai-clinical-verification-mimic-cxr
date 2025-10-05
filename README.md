@@ -9,6 +9,18 @@ This repository accompanies the research paper:
 
 ---
 
+## Evaluation Pipeline
+
+### Fig. 1 — High-Level Workflow for Labeling Textual Reports
+<p align="center">
+  <img src="images/fig1_textual_workflow.png" alt="Workflow for Labeling Textual Reports" width="700"/>
+</p>
+
+### Fig. 2 — High-Level Workflow for Labeling Reports Generated from X-ray Images
+<p align="center">
+  <img src="images/fig2_image_workflow.png" alt="Workflow for Labeling Reports from X-ray Images" width="700"/>
+</p>
+
 ## Overview
 
 This project provides the **evaluation results and analysis scripts** used to benchmark  
