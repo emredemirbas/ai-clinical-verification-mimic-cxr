@@ -4,7 +4,7 @@ This repository accompanies the research paper:
 
 > **Clinical Verification of AI Models for Radiology Report Annotation Using a Physician-Annotated MIMIC-CXR**  
 > *Presented at the 9th IEEE International Symposium on Innovative Approaches in Smart Technologies (ISAS 2025)*  
-> [View Paper on IEEE Xplore]([https://ieeexplore.ieee.org/](https://ieeexplore.ieee.org/document/11101953))
+> [View Paper on IEEE Xplore](https://ieeexplore.ieee.org/document/11101953)
 
 ---
 
