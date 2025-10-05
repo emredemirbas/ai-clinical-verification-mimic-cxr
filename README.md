@@ -15,13 +15,14 @@ benchmarking several **Large Language Models (LLMs)** — including GPT-4, Gemin
 against **physician-labeled MIMIC-CXR** datasets.
 
 The repository contains:
-- AI-generated and ground-truth labeled reports  
-- Evaluation notebooks for accuracy, precision, recall, and F1 metrics  
-- Labeling pipelines for GPT-based and Gemini-based experiments
+- Model output files (annotations produced by GPT-4o, Gemini 2.0, Microsoft Phi4, and Deepseek-R1-Distill-
+Llama-8B)  
+- Evaluation scripts and Jupyter notebooks for metric computation and cross-model comparison  
+- Processed subsets of the MIMIC-CXR dataset (no raw or ground-truth data included)
 
 ---
 
-## 🧠 Models Evaluated
+##  Models Evaluated
 
 | Model | Provider | Mode |
 |:------|:----------|:-----|
@@ -32,4 +33,4 @@ The repository contains:
 
 ---
 
-> 🧾 *For academic use only. Dataset usage complies with the PhysioNet MIMIC-CXR license.*
+> *For academic use only. Dataset usage complies with the PhysioNet MIMIC-CXR license.*
