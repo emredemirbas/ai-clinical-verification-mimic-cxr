@@ -1,4 +1,4 @@
-# ceng404-special-topics-in-ceng
+# ai-clinical-verification-mimic-cxr
 
 Usage of GPT Labeler:
 
