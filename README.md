@@ -15,7 +15,7 @@ benchmarking several **Large Language Models (LLMs)** — including GPT-4, Gemin
 against **physician-labeled MIMIC-CXR** datasets.
 
 The repository contains:
-- Model output files (annotations produced by GPT-4o, Gemini 2.0, Microsoft Phi4, and Deepseek-R1-Distill-
+- Model output files (annotations produced by GPT-4o, Gemini 1.5 Pro, Microsoft Phi4, and Deepseek-R1-Distill-
 Llama-8B)  
 - Evaluation scripts and Jupyter notebooks for metric computation and cross-model comparison  
 - Processed subsets of the MIMIC-CXR dataset (no raw or ground-truth data included)
