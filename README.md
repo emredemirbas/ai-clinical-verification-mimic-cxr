@@ -42,7 +42,7 @@ for comparing labeling accuracy, precision, recall, and F1-scores across models.
 
 ## Authors
 
-**Emre Demirbaş**, **Ömer Faruk Özüyagli**, **Buse Nur İleri**, **Ebubekir Alatepe**,  
+**Ömer Faruk Özüyağlı**, **Emre Demirbaş**, **Buse Nur İleri**, **Ebubekir Alatepe**,  
 **Yasin Durusoy**, **M. Fatih Demirci**  
 Department of Computer Engineering, Ankara Yıldırım Beyazıt University  
 and Oteo Health Technologies
